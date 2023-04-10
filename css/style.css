@@ -66,7 +66,7 @@ details ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: rgb(241, 228, 213);
+  /* background-color: rgb(241, 228, 213); */
   /* font-size: 40px; */
 }
 details li {
@@ -110,16 +110,32 @@ nav > aside a {
 
 /* header */
 header {
-  background-image: url(../img/wallpaper00.jpg);
+  /* background-image: url(../img/wallpaper00.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  height:69vh;
+  height:69vh; */
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-attachment: fixed;
+  height: 70vh;
+  /* background-attachment: fixed; */
+}
+
+
+body:before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url("/img/wallpaper01.jpg") center no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 header > h1{
@@ -142,6 +158,8 @@ footer {
   text-align: center;
   padding: 5vh 3vh;
   row-gap: 3vh;
+  z-index: 1;
+  background-color: rgb(241, 228, 213);
 }
 
 .about img {
@@ -157,19 +175,21 @@ footer {
   row-gap: 3vh;
 }
 
+
 /* img */
 .img {
-  background-image: url(../img/wallpaper00.jpg);
+  /* background-image: url(../img/wallpaper00.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover;
-  height: 40vh;
-  background-attachment: fixed;
+  background-size: cover; */
+  /* height: 40vh; */
+  /* background-attachment: fixed; */
 }
 
 /* skill */
 .skill {
   height: 40vh;
+  /* background-color: rgb(241, 228, 213); */
 }
 
 .skill > article {
@@ -246,6 +266,8 @@ footer {
   padding-top: 5vh;
   padding-bottom: 5vh;
   align-items: center;
+  background-color: rgb(241, 228, 213);
+
 }
 
 .work img {
@@ -266,14 +288,14 @@ footer {
 }
 
 /* service */
-.service {
+/* .service {
   background-image: url(../img/wallpaper00.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   height:70vh;
   background-attachment: fixed;
-}
+} */
 
 .service > article {
   display: flex;
@@ -313,6 +335,7 @@ footer {
   align-items: center;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  background-color: rgb(241, 228, 213);
 }
 
 .contact section {
